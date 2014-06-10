@@ -12,6 +12,13 @@
 		283E544D1946DAF000F756A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 283E544B1946DAF000F756A9 /* Main.storyboard */; };
 		283E544F1946DAF000F756A9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 283E544E1946DAF000F756A9 /* Images.xcassets */; };
 		283E545B1946DAF000F756A9 /* CBExternalStoryboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283E545A1946DAF000F756A9 /* CBExternalStoryboardTests.swift */; };
+		283E54651946DB0F00F756A9 /* Secondary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 283E54641946DB0F00F756A9 /* Secondary.storyboard */; };
+		283E546B1946DD5C00F756A9 /* CBBaseSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283E54691946DD5C00F756A9 /* CBBaseSegue.swift */; };
+		283E546C1946DD5C00F756A9 /* CBExternalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283E546A1946DD5C00F756A9 /* CBExternalViewController.swift */; };
+		283E546E1946DDC100F756A9 /* CBModalSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283E546D1946DDC100F756A9 /* CBModalSegue.swift */; };
+		283E54701946F99700F756A9 /* ClosableModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283E546F1946F99700F756A9 /* ClosableModalViewController.swift */; };
+		283E54721946FA8D00F756A9 /* CBPushSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283E54711946FA8D00F756A9 /* CBPushSegue.swift */; };
+		283E54741946FE1400F756A9 /* CBNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283E54731946FE1400F756A9 /* CBNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +41,13 @@
 		283E54541946DAF000F756A9 /* CBExternalStoryboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CBExternalStoryboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		283E54591946DAF000F756A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		283E545A1946DAF000F756A9 /* CBExternalStoryboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBExternalStoryboardTests.swift; sourceTree = "<group>"; };
+		283E54641946DB0F00F756A9 /* Secondary.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Secondary.storyboard; sourceTree = "<group>"; };
+		283E54691946DD5C00F756A9 /* CBBaseSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBBaseSegue.swift; sourceTree = "<group>"; };
+		283E546A1946DD5C00F756A9 /* CBExternalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBExternalViewController.swift; sourceTree = "<group>"; };
+		283E546D1946DDC100F756A9 /* CBModalSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBModalSegue.swift; sourceTree = "<group>"; };
+		283E546F1946F99700F756A9 /* ClosableModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosableModalViewController.swift; sourceTree = "<group>"; };
+		283E54711946FA8D00F756A9 /* CBPushSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBPushSegue.swift; sourceTree = "<group>"; };
+		283E54731946FE1400F756A9 /* CBNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,9 +89,12 @@
 		283E54441946DAF000F756A9 /* CBExternalStoryboard */ = {
 			isa = PBXGroup;
 			children = (
+				283E54661946DD3E00F756A9 /* Classes */,
 				283E54471946DAF000F756A9 /* AppDelegate.swift */,
 				283E54491946DAF000F756A9 /* ViewController.swift */,
 				283E544B1946DAF000F756A9 /* Main.storyboard */,
+				283E54641946DB0F00F756A9 /* Secondary.storyboard */,
+				283E546F1946F99700F756A9 /* ClosableModalViewController.swift */,
 				283E544E1946DAF000F756A9 /* Images.xcassets */,
 				283E54451946DAF000F756A9 /* Supporting Files */,
 			);
@@ -107,6 +124,34 @@
 				283E54591946DAF000F756A9 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		283E54661946DD3E00F756A9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				283E54681946DD4800F756A9 /* View Controllers */,
+				283E54671946DD4200F756A9 /* Segues */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		283E54671946DD4200F756A9 /* Segues */ = {
+			isa = PBXGroup;
+			children = (
+				283E54691946DD5C00F756A9 /* CBBaseSegue.swift */,
+				283E546D1946DDC100F756A9 /* CBModalSegue.swift */,
+				283E54711946FA8D00F756A9 /* CBPushSegue.swift */,
+			);
+			name = Segues;
+			sourceTree = "<group>";
+		};
+		283E54681946DD4800F756A9 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				283E546A1946DD5C00F756A9 /* CBExternalViewController.swift */,
+				283E54731946FE1400F756A9 /* CBNavigationController.swift */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				283E544D1946DAF000F756A9 /* Main.storyboard in Resources */,
+				283E54651946DB0F00F756A9 /* Secondary.storyboard in Resources */,
 				283E544F1946DAF000F756A9 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,7 +254,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				283E54741946FE1400F756A9 /* CBNavigationController.swift in Sources */,
+				283E546C1946DD5C00F756A9 /* CBExternalViewController.swift in Sources */,
+				283E54701946F99700F756A9 /* ClosableModalViewController.swift in Sources */,
+				283E546B1946DD5C00F756A9 /* CBBaseSegue.swift in Sources */,
 				283E544A1946DAF000F756A9 /* ViewController.swift in Sources */,
+				283E54721946FA8D00F756A9 /* CBPushSegue.swift in Sources */,
+				283E546E1946DDC100F756A9 /* CBModalSegue.swift in Sources */,
 				283E54481946DAF000F756A9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
